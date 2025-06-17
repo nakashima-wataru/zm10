@@ -32,9 +32,9 @@ def gcd(x: int, y: int):
 
 
 @app.command()
-def is_prime(n):
+def is_prime(x):
     """
     素数の判定
     """
-    typer.echo(mathtools.is_prime(n))
+    typer.echo(mathtools.is_prime(x))
 
