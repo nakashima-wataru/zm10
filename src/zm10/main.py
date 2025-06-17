@@ -32,6 +32,6 @@ def gcd(x: int, y: int):
 
 
 @app.command()
-def is_prime(x):
-    typer.echo(mathtools.is_prime(x))
+def is_prime(n):
+    typer.echo(mathtools.is_prime(n))
 
