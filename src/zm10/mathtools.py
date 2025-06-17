@@ -33,7 +33,8 @@ def is_prime(x):
     if x == 1:
         return False
     
-    i = int(2)
+    i = 2
+    x = int(x)
     while i * i <= x:
         if x % i == 0:
             return False
