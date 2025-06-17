@@ -30,3 +30,16 @@ def gcd(x: int, y: int):
     """
     typer.echo(mathtools.gcd(x, y))
 
+
+@app.command()
+def is_prime(x):
+    """素数判定"""
+    if x == 1:
+        return False
+    i = 2
+    while i * i <= x:
+        if x % i ==0:
+            return False
+        i += 1
+    typer.echo(True)
+
