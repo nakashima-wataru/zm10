@@ -3,6 +3,7 @@ import datetime
 import typer
 
 from zm10 import mathtools
+from zm10 import demo
 
 app = typer.Typer()
 
@@ -38,3 +39,7 @@ def is_prime(x):
     """
     typer.echo(mathtools.is_prime(x))
 
+
+@app.command()
+def hello(name:str ="wataru"):
+    typer.echo(demo.hello(name))
