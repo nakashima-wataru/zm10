@@ -38,7 +38,7 @@ def play_game():
 
         if hits == 4:
             print("おめでとうございます！正解です！")
-            print(f"正解は「{''.join(answer)}」でした。")
+            print(f"正解は「{(answer)}」でした。")
             break
 
 if __name__ == "__main__":
